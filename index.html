@@ -6,9 +6,110 @@
     <title>PetPawsessories</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Move navigation links further to the left */
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+        }
+
         header ul {
-            margin-left: -50px; /* Increased negative value to move left */
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header ul li {
+            margin: 0 15px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .login-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .text-box h2 {
+            font-size: 3rem;
+        }
+
+        .text-box p {
+            font-size: 1.2rem;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header ul {
+                flex-direction: column;
+            }
+
+            header ul li {
+                margin: 10px 0;
+            }
+
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-box h2 {
+                font-size: 2rem;
+            }
+
+            .text-box p {
+                font-size: 1rem;
+            }
+
+            .login-icon img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+            .text-box h2 {
+                font-size: 2.5rem;
+            }
+
+            .text-box p {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
@@ -17,23 +118,23 @@
         <div class="circle"></div>
         <header>
             <a href="#"><img src="images/lodo.png" class="logo" alt="Logo"></a>
-        
+            
             <ul>
                 <li><a href="#">PRODUCTS</a></li>
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">ABOUT US</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
-        
-            <!-- Login Icon with hyperlink -->
+
             <a href="loginindex.html" class="login-icon">
                 <img src="images/user.png" alt="Login Icon">
             </a>
         </header>
+
         <div class="container">
             <div class="text-box">
                 <h2>Welcome<br>To <span>PetPawsessories</span></h2>
-                <p>We’re here to make your pet’s life happier with stylish accessories, comfy essentials and top-notch care, because they deserve nothing but the best! </p>
+                <p>We’re here to make your pet’s life happier with stylish accessories, comfy essentials and top-notch care, because they deserve nothing but the best!</p>
                 <a href="#">Learn more</a>
             </div>
 
@@ -44,6 +145,6 @@
 
     </section>
 
-    <iframe src="footer.html" width="100%" height="300px" frameborder="0"></iframe>
+    <iframe src="footer.html" frameborder="0"></iframe>
 </body>
 </html>
